@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice Assistant Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Asisten Sekolah</h1>
+  <p>Pilih mode interaksi:</p>
+  <button onclick="startListening()">🎤 Gunakan Suara (HP)</button>
+  <button onclick="useTyping()">⌨️ Ketik Pertanyaan (PC)</button>
+  <br><br>
+  <div id="output"></div>
+
+  <div id="typingArea" style="display:none;">
+    <input type="text" id="textInput" placeholder="Ketik pertanyaan..." />
+    <button onclick="sendTyped()">Kirim</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
